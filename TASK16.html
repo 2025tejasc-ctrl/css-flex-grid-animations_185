@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{margin:0;font-family:Arial}
+
+footer{
+  background:#1f2a36;
+  color:#fff;
+  padding:40px;
+}
+
+.footer-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.col{
+  display:flex;
+  flex-direction:column;
+}
+
+.col h4{
+  margin-bottom:10px;
+  position:relative;
+  display:inline-block;
+}
+
+.col h4::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:60px;        
+  height:2px;
+  background:#3498db;
+}
+
+
+
+.col a{
+  text-decoration:none;
+  color:#ccc;
+  margin:5px 0;
+  transition:.3s;
+}
+
+.col a:hover{
+  color:#3498db;
+  padding-left:5px;
+}
+
+.copy{
+  text-align:center;
+  margin-top:30px;
+  border-top:1px solid #444;
+  padding-top:15px;
+  font-size:14px;
+  color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<footer>
+  <div class="footer-container">
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">Our Story</a>
+      <a href="#">Team</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <div class="col">
+      <h4>Services</h4>
+      <a href="#">Web Design</a>
+      <a href="#">Development</a>
+      <a href="#">SEO</a>
+    </div>
+
+    <div class="col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+    </div>
+
+    <div class="col">
+      <h4>Contact</h4>
+      <a href="#">tejaschavan1904@gmail.com</a>
+      <a href="#">+91 8779830328</a>
+    </div>
+
+  </div>
+
+  <div class="copy">© 2026 YourBrand | All Rights Reserved</div>
+</footer>
+
+</body>
+</html>

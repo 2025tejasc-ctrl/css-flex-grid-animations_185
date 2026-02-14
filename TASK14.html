@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial
+        }
+
+        .split {
+            display: flex;
+            height: 100vh
+        }
+
+        .side {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            transition: .5s;
+            cursor: pointer;
+        }
+
+        .left {
+            background: linear-gradient(#ff9f43, #ff6b6b)
+        }
+
+        .right {
+            background: linear-gradient(#54a0ff, #5f27cd)
+        }
+
+        .side:hover {
+            flex: 2
+        }
+
+        button {
+            padding: 8px 15px;
+            border: 1px solid #fff;
+            background: none;
+            color: #fff;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="split">
+        <div class="side left">
+            <h1>Split Screen 1</h1>
+            <button>Learn More</button>
+        </div>
+
+        <div class="side right">
+            <h1>Split Screen 2</h1>
+            <button>Learn More</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
